@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homebase</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @media screen and (max-width: 768px) {
+        body {
+          background-color: black;
+        }
+      }
+      body {
+        margin: 0px;
+      }
+
+      .header {
+        position: sticky;
+        background-color: black;
+        color: rgb(204, 204, 204);
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+        margin: 0px;
+      }
+
+      .logo {
+        margin-left: 10px;
+        margin-right: 40px;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+      }
+
+      .nav-list {
+        height: 15px;
+        margin-top: 24px;
+      }
+
+      p {
+        margin-right: 15px;
+      }
+
+      .header-button {
+        margin-left: 650px;
+        width: 150px;
+        border: none;
+        border-radius: 7px;
+        height: 35px;
+        margin-top: 13px;
+      }
+
+      .content {
+        background-color: black;
+        color: white;
+        height: 450px;
+        padding-top: 50px;
+        padding-bottom: 0px;
+      }
+
+      .content-title {
+        margin-top: 0px;
+        padding-top: 20px;
+        width: 400px;
+        height: 210px;
+        font-family: "Inter", sans-serif;
+        font-size: 4em;
+        font-weight: 800;
+        margin-left: 180px;
+        font-kerning: -4px;
+        line-height: 58px;
+      }
+
+      .content-description {
+        width: 400px;
+        height: 90px;
+        margin-left: 180px;
+        text-align: left;
+        font-weight: 300;
+      }
+
+      span {
+        background: -webkit-linear-gradient(
+          145deg,
+          #120580,
+          #ffffff
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .form {
+        width: 400px;
+        margin-left: 180px;
+      }
+
+      input {
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+        padding: 8px;
+        padding-left: 15px;
+        background-color: #222021;
+        color: white;
+      }
+
+      input:hover {
+        box-shadow: 0px 1px 5px rgb(56, 56, 56);
+      }
+
+      .form-button {
+        height: 45px;
+        width: 130px;
+        border: none;
+        border-radius: 5px;
+        background-color: #3ecb53;
+        margin-left: 5px;
+        color: black;
+      }
+
+      button {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+      }
+
+      .footer {
+        background-color: black;
+        height: 100px;
+        color: #8f8e8e;
+        padding-left: 180px;
+      }
+
+      td {
+        padding: 15px;
+      }
+
+      .footer-head {
+        position: relative;
+        bottom: 5px;
+      }
+
+      .ill-image {
+        width: 360px;
+      }
+
+      .illustration {
+        position: relative;
+        left: 800px;
+        top: -385px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+      }
+
+      a[href="#"] {
+        font-weight: 700;
+      }
+
+      a[href="#"]:hover {
+        background: -webkit-linear-gradient(
+          145deg,
+          #120580,
+          #ffffff
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .header-button:hover {
+        box-shadow: 0px 1px 10px rgb(83, 83, 83);
+      }
+
+      .form-button:hover {
+        box-shadow: 0px 3px 5px rgb(83, 83, 83);
+      }
+
+      .logo-icon {
+        width: 45px;
+        height: 45px;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+
+      .circle-1 {
+        width: 20px;
+        height: 20px;
+        background-color: white;
+      }
+
+      .circle-2 {
+        width: 15px;
+        height: 15px;
+        background-color: white;
+        position: relative;
+        left: 20px;
+      }
+
+      .circle-1:hover,
+      .circle-2:hover {
+        background: -webkit-linear-gradient(145deg, #120580, #ffffff);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo-icon">
+          <div class="circle-1"></div>
+          <div class="circle-2"></div>
+        </div>
+
+        <p class="logo"><a href="#">homebase</a></p>
+        <p class="nav-list"><a href="">Documentation</a></p>
+        <p class="nav-list"><a href="">Pricing</a></p>
+        <p class="nav-list"><a href="">Resources</a></p>
+        <p class="nav-list"><a href="">Blog</a></p>
+        <button class="header-button">Get early access</button>
+      </div>
+      <div class="content">
+        <div class="content-title">
+          <span>The Platform for local-first software.</span>
+        </div>
+        <div class="content-description">
+          Don't write real time APIs. Move your database to browser. Homebase
+          keep local data in sync so you can build fast and collaborative React
+          apps.
+        </div>
+        <div class="form">
+          <input
+            type="email"
+            name="mail"
+            class="mail-box"
+            placeholder="Your email"
+          />
+          <button class="form-button">Get early access</button>
+        </div>
+
+        <div class="illustration">
+          <img
+            class="ill-image"
+            src="assets/img/girl-sitting-on-armchair-with-laptop-by-oblik-studio.png"
+          />
+        </div>
+      </div>
+      <div class="footer">
+        <table>
+          <tr>
+            <td class="footer-head">Integrations</td>
+            <td><img src="assets/img/aliexpress.png" /></td>
+            <td><img src="assets/img/spotify.png" /></td>
+            <td><img src="assets/img/square.png" /></td>
+            <td><img src="assets/img/duolingo.png" /></td>
+            <td><img src="assets/img/kia.png" /></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
